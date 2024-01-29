@@ -24,6 +24,7 @@ open(joinpath(generated_path, "index.md"), "w") do io
     end
 end
 
+
 makedocs(
     sitename = "Esempi Documentation",
     modules = [HelloworldJulia],
