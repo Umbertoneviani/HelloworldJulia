@@ -39,11 +39,7 @@ makedocs(
 )
 
 deploydocs(
-
     repo = "github.com/Umbertoneviani/HelloworldJulia.git",
-    target = "site",
-    branch = "main",
-    project = "docs/Project.toml",
 )
 
 
