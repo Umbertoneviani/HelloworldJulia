@@ -8,7 +8,7 @@ using HelloworldJulia
 # Base information for the site generation
 docs_dir = joinpath(@__DIR__)
 build_dir = joinpath(docs_dir, "build")
-source_dir = joinpath(@__DIR__, "src")
+source_dir = joinpath(docs_dir, "src")
 repo_url = "https://github.com/Umbertoneviani/HelloworldJulia"
 
 # Check and create necessary directories
@@ -50,6 +50,7 @@ if get(ENV, "CI", "false") == "false"
     deploydocs(
         repo = repo_url,
         target = build_dir,
+        branch = Main,
         # Add other necessary deployment options here, such as:
         # push_preview = true, # if you want to push a preview version of the docs
         # julia = "1.x", # specify the Julia version if necessary
