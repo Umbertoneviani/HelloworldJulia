@@ -1,10 +1,11 @@
 module HelloworldJulia
 
 
-
 include(joinpath("functions", "Esempio1.jl"))
+using .Esempio1
 
-include(joinpath("functions", "HelloworldFile.jl"))
+F = func(1)
+
 
 
 end
