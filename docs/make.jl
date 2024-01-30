@@ -50,7 +50,6 @@ if get(ENV, "CI", "false") == "false"
     deploydocs(
         repo = repo_url,
         target = build_dir,
-        branch = Main,
         # Add other necessary deployment options here, such as:
         # push_preview = true, # if you want to push a preview version of the docs
         # julia = "1.x", # specify the Julia version if necessary
