@@ -6,18 +6,18 @@ using HelloworldJulia
 # include("path/to/HelloworldJulia.jl")
 
 # Base information for the site generation
-docs_dir = joinpath(@__DIR__, "docs")
+docs_dir = joinpath(@__DIR__)
 build_dir = joinpath(docs_dir, "build")
 source_dir = joinpath(@__DIR__, "src")
 repo_url = "https://github.com/Umbertoneviani/HelloworldJulia"
 
 # Check and create necessary directories
 isdir(docs_dir) || mkdir(docs_dir)
-isdir(build_dir) || mkdir(build_dir)
+#isdir(build_dir) || mkdir(build_dir)
 
 # Generate the 'index.md' file dynamically from the 'README.md'
-readme_path = joinpath(source_dir, "README.md")
-index_md_path = joinpath(docs_dir, "index.md")
+readme_path = joinpath(dirname(docs_dir), "README.md")
+index_md_path = joinpath(source_dir, "index.md")
 
 # Check if README.md exists
 if isfile(readme_path)
@@ -37,7 +37,7 @@ end
 makedocs(
     sitename = "Esempi Documentation",
     modules = [HelloworldJulia],
-    format = Documenter.HTML(prettyurls=get(ENV, "CI", "false") == "true"),
+    format = Documenter.HTML(prettyurls=get(ENV, "CI", "false") == "false"),
     pages = [
         "Home" => "index.md",
         "Esempio1" => "page2.md",
@@ -46,7 +46,7 @@ makedocs(
 )
 
 # Only deploy if this script is run in a CI environment
-if get(ENV, "CI", "false") == "true"
+if get(ENV, "CI", "false") == "false"
     deploydocs(
         repo = repo_url,
         target = build_dir,
