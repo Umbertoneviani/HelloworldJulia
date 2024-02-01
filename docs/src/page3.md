@@ -1,7 +1,7 @@
 ## HelloworldFile.jl Documentation
 
 ```@docs
-HelloworldJulia.jl
+HelloworldJulia
 
 ```
 ---
