@@ -1,7 +1,7 @@
 ## HelloworldFile.jl Documentation
 
 ```@docs
-hello
+
 HelloworldJulia.HelloworldFile.hello()
 
 ```
