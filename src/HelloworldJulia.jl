@@ -9,7 +9,7 @@ F = func(1)
 include(joinpath("functions", "HelloworldFile.jl"))
 using .HelloworldFile
 
-
+h = hello()
 end
 
 
