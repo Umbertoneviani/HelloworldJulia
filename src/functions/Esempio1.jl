@@ -36,6 +36,8 @@ Maxwell's equations describe the fundamentals of electricity and magnetism. They
 
 
 """
+function func(x)
+
 func(x) = 2x + 1
 
 end

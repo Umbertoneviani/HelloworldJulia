@@ -1,3 +1,7 @@
+uuid = "c7e1bd25-b53e-4944-9b3a-2adf817a4483"
+authors = ["Umberto Neviani"]
+
+
 using Documenter
 using HelloworldJulia
 
@@ -11,9 +15,11 @@ build_dir = joinpath(docs_dir, "build")
 source_dir = joinpath(docs_dir, "src")
 repo_url = "https://github.com/Umbertoneviani/HelloworldJulia"
 
+DocMeta.setdocmeta!(HelloworldJulia, :DocTestSetup, :(using HelloworldJulia); recursive=true)
+
 # Check and create necessary directories
 isdir(docs_dir) || mkdir(docs_dir)
-#isdir(build_dir) || mkdir(build_dir)
+isdir(build_dir) || mkdir(build_dir)
 
 # Generate the 'index.md' file dynamically from the 'README.md'
 readme_path = joinpath(dirname(docs_dir), "README.md")
@@ -48,11 +54,11 @@ makedocs(
 # Only deploy if this script is run in a CI environment
 if get(ENV, "CI", "false") == "false"
     deploydocs(
-        repo = repo_url,
+        repo = "github.com/Umbertoneviani/HelloworldJulia",
         target = build_dir,
-        # Add other necessary deployment options here, such as:
-        # push_preview = true, # if you want to push a preview version of the docs
-        # julia = "1.x", # specify the Julia version if necessary
+        devbranch = "main",
+        devurl="dev",
+        branch = "gh-pages",
     )
 else
     println("Skipping deployment because CI environment was not detected.")
