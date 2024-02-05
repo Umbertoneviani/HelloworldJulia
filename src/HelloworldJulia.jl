@@ -11,7 +11,7 @@ using .HelloworldFile.jl
 using Revise
 
 H= hello
-F = func(1)
+F = func()
 
 
 
