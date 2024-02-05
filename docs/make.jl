@@ -39,6 +39,7 @@ open(index_md_path, "a") do io
     println(io, "\n\n```@meta\nEditURL = \"$edit_url\"\n```")
 end
 
+
 # Documenter settings
 makedocs(
     sitename = "Esempi Documentation",
