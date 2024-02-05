@@ -1,7 +1,7 @@
 ## Esempio1.jl Documentation
 
 ```@docs
-Esempio1.func(x)
+func(x)
 ```
 
 ---

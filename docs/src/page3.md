@@ -2,7 +2,7 @@
 
 ```@docs
 
-HelloworldFile.hello()
+hello()
 
 ```
 ---
