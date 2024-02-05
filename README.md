@@ -7,7 +7,7 @@
 
 | **Build Status** |
 |:------------ |
-| [![Build Status](https://github.com/Umbertoneviani/HelloworldJulia/workflows/CI/badge.svg?branch=main)](https://github.com/Umbertoneviani/HelloworldJulia/actions?query=workflow%3ACI)
+| [![Build Status](https://github.com/Umbertoneviani/HelloworldJulia/workflows/CI/badge.svg?branch=main)]
 
 
 
