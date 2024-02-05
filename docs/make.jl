@@ -44,7 +44,7 @@ end
 makedocs(
     sitename = "Esempi Documentation",
     modules = [HelloworldJulia],
-    format = Documenter.HTML(prettyurls=get(ENV, "CI", "false") == "false"),
+    format = Documenter.HTML(prettyurls=get(ENV, "CI", "false") == "true"),
     pages = [
         "Home" => "index.md",
         "Esempio1" => "page2.md",
@@ -52,15 +52,19 @@ makedocs(
     ],
 )
 
+deploydocs(
+    repo = "github.com/Umbertoneviani/HelloworldJulia",
+    target = build_dir,
+    branch = "gh-pages",
+    push_preview = true,  # Force the deployment even if it's a preview
+)
+
+
+
+
 # Only deploy if this script is run in a CI environment
-if get(ENV, "CI", "false") == "false"
-    deploydocs(
-        repo = "github.com/Umbertoneviani/HelloworldJulia",
-        target = build_dir,
-        devbranch = "main",
-        devurl="dev",
-        branch = "gh-pages",
-    )
-else
-    println("Skipping deployment because CI environment was not detected.")
-end
+#if get(ENV, "CI", "false") == "true"
+
+#else
+#    println("Skipping deployment because CI environment was not detected.")
+#end
