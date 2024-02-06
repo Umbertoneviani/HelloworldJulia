@@ -2,7 +2,7 @@
 
 | **Documentation** |
 |:------------ |
-| [![](https://img.shields.io/badge/docs-stable-blue.svg)](umbertoneviani.github.io/HelloworldJulia/stable/)
+| [![](https://img.shields.io/badge/docs-stable-blue.svg)](umbertoneviani.github.io/HelloworldJulia/stable)
 
 | **Build Status** |
 |:------------ |
