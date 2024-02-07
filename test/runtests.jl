@@ -7,12 +7,12 @@ using Test
         @test func(5) == 11
    end
 
-    end
+end
 
     @testset "Functionality 2" begin
         # Add tests here
     end
 
     # Add more @testset blocks for different functionalities or components of your package
-end
+
 
