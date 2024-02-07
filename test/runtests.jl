@@ -32,12 +32,20 @@ using Test
 
         # Test 10: Fractional numbers
         @test func(1.5, 2.5) == 9.0
+        
    end
 
 end
 
     @testset "Functionality 2" begin
-        # Add tests here
+  
+        # Test over a range of integers
+            for x in -5:5
+                for y in -5:5
+                    expected = x + 3*y
+                    @test func(x, y) == expected
+                end
+            end
     end
 
     # Add more @testset blocks for different functionalities or components of your package
