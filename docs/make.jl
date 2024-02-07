@@ -47,7 +47,7 @@ makedocs(
     modules = [HelloworldJulia],
     format = Documenter.HTML(prettyurls=get(ENV, "CI", "false") == "true"),
     pages = [
-        "Home" => "index.md",
+        "Documentation" => "index.md",
         "Esempio1" => "page2.md",
         "Helloworld" => "page3.md",
     ],

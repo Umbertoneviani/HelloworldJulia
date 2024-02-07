@@ -1,13 +1,13 @@
 ## Esempio1.jl Documentation
 
-## func
+### func
 
 ```@docs
 func(x,y)
 
 ```
 
-## random_function
+### random_function
 
 ```@docs
 
@@ -17,7 +17,7 @@ random_function(min::Int, max::Int)
 
 ---
 
-# link-to-prova
+#### link-to-prova
 
 ---
 
