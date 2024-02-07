@@ -3,8 +3,8 @@ using Test
 
 @testset "HelloworldJulia Tests" begin
     @testset "Functionality 1" begin
-        @test func(2) == 5
-        @test func(5) == 11
+        @test func(2,1) == 5
+        @test func(5,4) == 17
    end
 
 end

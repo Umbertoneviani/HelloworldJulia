@@ -5,9 +5,9 @@ module Esempio1
 export func
 
 """
-    func(x)
+    func(x,y)
 
-Return double the number `x` plus `1`.
+Return double the number `x` plus `1` (rivedi).
 
 e prova latek
 
@@ -38,8 +38,8 @@ Maxwell's equations describe the fundamentals of electricity and magnetism. They
 
 
 """
-function func(x)
-    return 2x + 1
+function func(x,y)
+    return x + 3y
 end
 
 end
