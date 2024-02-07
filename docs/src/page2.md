@@ -1,8 +1,19 @@
 ## Esempio1.jl Documentation
 
+## func
+
 ```@docs
 func(x,y)
+
 ```
+
+## random_function
+
+```@docs
+
+random_function(min::Int, max::Int)
+```
+
 
 ---
 

@@ -50,7 +50,7 @@ end
 #rand
 
 """
-    random_function(min, max)
+    random_function(min::Int, max::Int)
 
 Generate a random integer between `min` and `max`.
 """
