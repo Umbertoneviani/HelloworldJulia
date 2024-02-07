@@ -1,6 +1,20 @@
 using HelloworldJulia
 using Test
 
+@testset "random_function Tests" begin
+    min_val, max_val = 1, 10
+    random_values = [HelloworldJulia.random_function(min_val, max_val) for _ in 1:100]
+
+    # Test that all random values are within the specified range
+    @test all(min_val <= val <= max_val for val in random_values)
+
+    # Test that the function produces different values (not strictly necessary,
+    # but useful to check randomness in a very basic way)
+    @test length(unique(random_values)) > 1
+end
+
+
+
 @testset "Set 1" begin
   
       @test func(2,1) == 5
