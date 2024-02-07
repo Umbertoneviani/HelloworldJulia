@@ -2,7 +2,12 @@
 
 module Esempio1
 
+using Random
+
+#func
+
 export func
+export random_function
 
 """
     func(x,y)
@@ -41,5 +46,18 @@ Maxwell's equations describe the fundamentals of electricity and magnetism. They
 function func(x,y)
     return x + 3y
 end
+
+#rand
+
+"""
+    random_function(min, max)
+
+Generate a random integer between `min` and `max`.
+"""
+function random_function(min::Int, max::Int)
+    return rand(min:max)
+end
+
+
 
 end
