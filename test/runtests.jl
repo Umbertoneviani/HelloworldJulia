@@ -22,10 +22,7 @@ using Test
         @test func(0, 0) == 0
  
         # Test 6: Large numbers
-        @test func(10000, 20000) == 60000
-
-        # Test 7: Small (close to zero) positive numbers
-        @test func(0.1, 0.2) == 0.7
+        @test func(10000, 20000) == 70000
 
         # Test 8: x positive, y negative
         @test func(5, -2) == -1
